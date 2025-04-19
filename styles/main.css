@@ -48,6 +48,10 @@ button:hover {
     background-color: var(--rojo-oscuro);
 }
 
+#second-button {
+    display: none;
+}
+
 #images-container {
     width: 100vw;
     display: flex;
@@ -60,6 +64,13 @@ button:hover {
 
 #images-container img:nth-child(2) {
     transform: scaleX(-1);
+}
+
+#gif-shadow {
+    position: absolute;
+    display: none;
+    top: 30%;
+    margin-left: 20vh;
 }
 
 

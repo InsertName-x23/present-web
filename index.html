@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!--ANIMACIONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="styles/main.css">
     <title>Para ti mi vida</title>
 </head>
@@ -20,7 +23,8 @@
     <div id="principal-container">
         <p id="principal-text">Hola mi amor uwu</p>
 
-        <button onclick="changeText()">Puchale Puchale</button>
+        <button id="first-button" onclick="changeText(); animar()">Puchale Puchale</button>
+        <button id="second-button" onclick="changePage()">Vuelvele a Puchar uwu</button>
     </div>
 
     <div id="images-container">
@@ -29,6 +33,10 @@
         <img src="assets/ShadowPose.png" alt="">
     </div>
 
+    <img id="gif-shadow" src="assets/ShadowPatinando.gif" alt="">
+
     <script src="scripts/buttonText.js"></script>
+    <script src="scripts/animationControl.js"></script>
+    <script src="scripts/changePage.js"></script>
 </body>
 </html>

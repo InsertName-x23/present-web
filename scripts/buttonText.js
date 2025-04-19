@@ -4,7 +4,16 @@ const texts = [
 ];
 let index = 0;
 
+const firstButton = document.getElementById("first-button");
+const secondButton = document.getElementById("second-button");
+
 function changeText() {
-    index = (index + 1) % texts.length;
-    document.getElementById("principal-text").textContent = texts[index];
+
+    setTimeout(() => {
+        index = (index + 1) % texts.length;
+        document.getElementById("principal-text").textContent = texts[index];
+
+        firstButton.style.display = "none";
+        secondButton.style.display = "block";
+    }, 200);
 }
