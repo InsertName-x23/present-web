@@ -7,14 +7,17 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--negro);
 }
 
 #principal-container {
+    margin-top: 32vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,5 +33,33 @@ p {
 
 button {
     height: 50px;
-    width: 20vw;
+    width: 30vh;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--rojo-claro);
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--negro)
 }
+
+button:hover {
+    background-color: var(--rojo-oscuro);
+}
+
+#images-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#images-container img{
+    width: 20vh;
+}
+
+#images-container img:nth-child(2) {
+    transform: scaleX(-1);
+}
+
+
