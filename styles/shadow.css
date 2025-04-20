@@ -1,0 +1,42 @@
+:root {
+    --negro: #1D1616;
+    --rojo-oscuro: #8E1616;
+    --rojo-claro: #D84040;
+    --blanco: #EEEEEE;
+}
+
+body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 50vh;
+}
+
+img {
+    width: 40vh;
+}
+
+#cart-container {
+    width: 50vh;
+    height: 20vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    font-family: "Noto Sans", sans-serif;
+}
+
+p {
+    text-align: center;
+}
